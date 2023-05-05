@@ -21,7 +21,7 @@
     "date": "2022-06-15",
     "category": "javascript",
     "path": "javascript-10-tips",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Node 기초 정리",

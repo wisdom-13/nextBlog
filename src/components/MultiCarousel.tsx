@@ -28,7 +28,7 @@ type Props = {
 
 export default function MultiCarousel({ children }: Props) {
   return (
-    <Carousel infinite autoPlay responsive={responsive} item-class='m-0'>
+    <Carousel infinite autoPlay responsive={responsive}>
       {children}
     </Carousel>
   );

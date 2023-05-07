@@ -6,7 +6,7 @@ type Prop = { post: Post }
 
 export default function PostCard({ post }: Prop) {
   return (
-    <li className='shadow-xl rounded-md'>
+    <div className='shadow-xl rounded-md'>
       <Link href={`posts/${post.path}`}>
         <Image className='rounded-md' src={`/images/posts/${post.path}.png`} alt={post.path} width={300} height={300} />
         <div className='p-3 px-4'>
@@ -16,6 +16,6 @@ export default function PostCard({ post }: Prop) {
           <small className='text-xs text-slate-400'>{post.date}</small>
         </div>
       </Link>
-    </li>
+    </div>
   );
 }

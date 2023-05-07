@@ -1,7 +1,7 @@
 import path from 'path';
 import { promises as fs } from 'fs';
 
-export type Posts = {
+export type Post = {
   title: string;
   description: string;
   date: string;
@@ -10,7 +10,7 @@ export type Posts = {
   featured: string;
 }
 
-export async function getPosts(): Promise<Posts[]> {
+export async function getPosts(): Promise<Post[]> {
   const filePath = path.join(process.cwd(), 'data', 'posts.json');
   const data = await fs.readFile(filePath, 'utf-8');
   return JSON.parse(data);

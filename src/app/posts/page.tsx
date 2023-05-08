@@ -9,7 +9,6 @@ export default async function PostsPage() {
       {/* @ts-expect-error Server Component */}
       <FeaturedPosts />
 
-      <h1>djfiowejfo</h1>
     </section>
   );
 }

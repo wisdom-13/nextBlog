@@ -6,7 +6,7 @@ export default async function CarouselPosts() {
   const posts = await getPosts();
 
   return (
-    <div>
+    <div className="w-full max-w-screen-xl">
       <h2 className='mt-8 font-semibold text-2xl mb-5'>You may like</h2>
       <div className='grid'>
         <MultiCarousel>

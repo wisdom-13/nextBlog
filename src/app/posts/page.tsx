@@ -12,7 +12,7 @@ export default async function PostsPage() {
     <section className="flex w-full max-w-screen-xl">
       <Category />
       {/* @ts-expect-error Server Component */}
-      <FeaturedPosts />
+      <FeaturedPosts category={'all'} />
     </section>
   );
 }

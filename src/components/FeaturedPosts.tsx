@@ -1,8 +1,11 @@
 import { getPosts } from "@/service/posts";
 import PostCard from "./PostCard";
 
+type Props = {
+  category: string
+}
 
-export default async function FeaturedPosts() {
+export default async function FeaturedPosts({ category }: Props) {
 
   const posts = await getPosts();
   const featured = posts.filter(post => post.featured);

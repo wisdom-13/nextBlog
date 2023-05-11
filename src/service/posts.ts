@@ -15,3 +15,8 @@ export async function getPosts(): Promise<Post[]> {
   return readFile(filePath, 'utf-8')
     .then<Post[]>(JSON.parse);
 }
+
+export async function getPost(path: string): Promise<Post | undefined> {
+  const posts = await getPosts();
+  return posts.find((post) => post.path === path);
+} 

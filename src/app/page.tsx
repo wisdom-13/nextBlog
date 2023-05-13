@@ -1,9 +1,10 @@
+import About from '@/components/About'
 import FeaturedPosts from '@/components/FeaturedPosts'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
+      <About />
       {/* @ts-expect-error Server Component */}
       <FeaturedPosts />
     </>

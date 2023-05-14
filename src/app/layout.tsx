@@ -1,8 +1,8 @@
 import Header from '@/components/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const sans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'TtottiH',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={sans.className}>
         <Header />
         <section>{children} </section>
       </body>

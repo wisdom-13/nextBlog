@@ -9,16 +9,16 @@ const responsive = {
     items: 4
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1254 },
+    breakpoint: { max: 3000, min: 1024 },
     items: 4
   },
   tablet: {
-    breakpoint: { max: 1254, min: 464 },
+    breakpoint: { max: 1024, min: 464 },
     items: 2
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1
+    items: 2
   }
 };
 
@@ -28,7 +28,7 @@ type Props = {
 
 export default function MultiCarousel({ children }: Props) {
   return (
-    <Carousel infinite autoPlay responsive={responsive}>
+    <Carousel infinite autoPlay responsive={responsive} itemClass="m-2">
       {children}
     </Carousel>
   );

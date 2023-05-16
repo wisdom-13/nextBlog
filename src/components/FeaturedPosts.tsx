@@ -13,7 +13,7 @@ export default async function FeaturedPosts({ category }: Props) {
 
   return (
     <div>
-      <h2 className='mt-8 font-semibold text-2xl mb-5'>Featured Posts</h2>
+      <h2 className='font-semibold text-2xl mt-8 mb-5'>Featured Posts</h2>
       <PostsGrid posts={posts} />
     </div>
   );

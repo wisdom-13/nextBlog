@@ -11,7 +11,7 @@ type Props = {
 
 export default async function page({ params: { slug } }: Props) {
 
-  const post = await getPost(slug);
+  const post = await getPostData(slug);
 
   if (!post) {
     redirect('/posts');

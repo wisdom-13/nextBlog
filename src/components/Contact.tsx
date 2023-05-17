@@ -4,7 +4,7 @@ import { AiFillGithub, AiOutlineTwitter, AiFillMail } from 'react-icons/ai';
 
 export default function Contact() {
   return (
-    <div className='flex flex-row shadow-xl rounded-md mt-12' style={{ width: '1200px' }}>
+    <div className='flex flex-row shadow-xl rounded-md mt-12'>
       <div className='bg-gray-100 rounded-md p-6 basis-1/4'>
         <div className='flex'>
           <AiFillGithub className='hover:text-rose-500 text-2xl mr-2' />

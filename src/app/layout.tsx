@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={sans.className}>
         <Header />
-        <section>{children} </section>
+        <section className='w-full max-w-screen-xl'>{children} </section>
       </body>
     </html>
   )

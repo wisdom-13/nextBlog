@@ -5,6 +5,13 @@ import { redirect } from 'next/navigation';
 import PostContent from '@/components/PostContent';
 import AdjacentPostCard from '@/components/AdjacentPostCard';
 
+import { Metadata } from 'next';
+
+export async function generateMetadata({ params: { slug } }: Props): Promise<Metadata> {
+  const { title, description } = await getPostData(slug);
+  return { title, description };
+}
+
 type Props = {
   params: {
     slug: string;

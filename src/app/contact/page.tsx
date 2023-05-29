@@ -1,6 +1,12 @@
 import Contact from "@/components/Contact";
 import { AiFillGithub, AiOutlineTwitter, AiFillMail } from 'react-icons/ai';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: '연락',
+}
 
 export default function ContactPage() {
   return (

@@ -5,8 +5,11 @@ import { Open_Sans } from 'next/font/google'
 const sans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'TtottiH',
-  description: 'JIHYE HOME',
+  title: {
+    default: 'TtottiH',
+    template: 'TtottiH | %s'
+  },
+  description: '지혜의 블로그',
 }
 
 export default function RootLayout({

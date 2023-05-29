@@ -8,6 +8,14 @@ import { getAllPosts } from "@/service/posts";
 import Link from 'next/link';
 
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'All Posts',
+  description: '모든 포스트',
+}
+
+
 export default async function PostsPage() {
 
   const posts = await getAllPosts();

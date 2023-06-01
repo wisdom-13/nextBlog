@@ -6,8 +6,8 @@ const sans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: {
-    default: 'TtottiH',
-    template: 'TtottiH | %s'
+    default: 'Jihye',
+    template: 'Jihye | %s'
   },
   description: '지혜의 블로그',
 }
